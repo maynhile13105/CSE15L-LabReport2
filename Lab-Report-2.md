@@ -5,15 +5,27 @@
 
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/1f722b19-8907-439e-9bd2-56bc7c1f4395)
 
--- Methods: handleRequest(), getPath(), getQuery(), equals(), contains(), splits()
--- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- Method `handleRequest()` received the URL as its argument,
+- Method `getPath()` and method `getQuery()` did not receive any arguments
+- Method `splits()` received "=" as its argument.
+- Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
+- Method `contains()` received "/add-messages" as its argument.
+- Other fields of the class are `num` and `result`.
+- `num` was increased by 1, from 0 to 1, and then `result` was changed from "" to `1. Hello+bob 
+There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was changed to 1 and the message "1. Hello+bob" was added to the 'result'. 
+
 - **Screenshot shows using `/add-messages?s=Hello bob`**
   
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/190b5d9d-e53d-40e0-a6e8-477545fe8af5)
 
--- Methods: handleRequest(), getPath(), getQuery(), equals(), contains(), splits()
--- 
+- Method `handleRequest()` received the URL as its argument,
+- Method `getPath()` and method `getQuery()` did not receive any arguments
+- Method `splits()` received "=" as its argument.
+- Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
+- Method `contains()` received "/add-messages" as its argument.
+- Other fields of the class are `num` and `result`.
+-  `num` was increased by 1, from 1 to 2. and then `result` was changed from `1. Hello+bob` to `1. Hello+bob \n 2. HowYouLikeThat".  
+There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was increased to 2 and the message "2. HowYouLikeThat" was added to the 'result'. 
 - **Screenshot for using `/add-messages?s=HowYouLikeThat`**
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/b8a55ee4-e645-4f27-a9e3-ee02c1e35b3f)
 
