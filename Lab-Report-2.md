@@ -3,16 +3,8 @@
 ## ***Part 1***
 - [**Code**](https://maynhile13105.github.io/CSE15L-LabReport2/StringServer.java)
 
-![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/1f722b19-8907-439e-9bd2-56bc7c1f4395)
+![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/6108db57-8119-4b0e-bac8-d68b4737e386)
 
-- Method `handleRequest()` received the URL as its argument,
-- Method `getPath()` and method `getQuery()` did not receive any arguments
-- Method `splits()` received "=" as its argument.
-- Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
-- Method `contains()` received "/add-messages" as its argument.
-- Other fields of the class are `num` and `result`.
-- `num` was increased by 1, from 0 to 1, and then `result` was changed from "" to `1. Hello+bob 
-There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was changed to 1 and the message "1. Hello+bob" was added to the 'result'. 
 
 - **Screenshot shows using `/add-messages?s=Hello bob`**
   
@@ -24,10 +16,20 @@ There were those changes because the URL I passed qualified the specific request
 - Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
 - Method `contains()` received "/add-messages" as its argument.
 - Other fields of the class are `num` and `result`.
--  `num` was increased by 1, from 1 to 2. and then `result` was changed from `1. Hello+bob` to `1. Hello+bob \n 2. HowYouLikeThat".  
-There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was increased to 2 and the message "2. HowYouLikeThat" was added to the 'result'. 
+- `num` was increased by 1, from 0 to 1, and then `result` was changed from "" to `1. Hello+bob 
+There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was changed to 1 and the message "1. Hello+bob" was added to the 'result'. 
+
 - **Screenshot for using `/add-messages?s=HowYouLikeThat`**
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/b8a55ee4-e645-4f27-a9e3-ee02c1e35b3f)
+
+- Method `handleRequest()` received the URL as its argument,
+- Method `getPath()` and method `getQuery()` did not receive any arguments
+- Method `splits()` received "=" as its argument.
+- Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
+- Method `contains()` received "/add-messages" as its argument.
+- Other fields of the class are `num` and `result`.
+-  `num` was increased by 1, from 1 to 2. and then `result` was changed from `1. Hello+bob` to `1. Hello+bob \n 2. HowYouLikeThat".  
+There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was increased to 2 and the message "2. HowYouLikeThat" was added to the 'result'.
 
 ## ***Part 2***
 - The screenshot for using the command `ls` the path to the private key for my SSH key for logging into ieng6 on my computer
