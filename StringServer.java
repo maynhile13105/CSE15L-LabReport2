@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    int num = 1;
+    int num = 0;
     String result="";
 
     public String handleRequest(URI url) {
@@ -12,8 +12,8 @@ class Handler implements URLHandler {
         else if (url.getPath().contains("/add-messages")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")){
-                    result += "\n" + num +". " + parameters[1]; 
                     num++;
+                    result += "\n" + num +". " + parameters[1]; 
                     return result;
                 }  
         }
