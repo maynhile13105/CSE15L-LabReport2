@@ -39,7 +39,7 @@ There were those changes because the URL I passed qualified the specific request
 - The screenshot for using the command `ls`  public key for your SSH key for logging into ieng6 within my account on ieng6
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/7ff80cb9-f128-4a07-a818-b30b4fcea311)
 
-The screenshot shows that I logged into ieng6 with my course-specific account without being asked for a password.
+- The screenshot shows that I logged into ieng6 with my course-specific account without being asked for a password.
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/abffeaa3-47d7-4691-8b66-db7e266033fd)
 
 ## ***Part 3***
