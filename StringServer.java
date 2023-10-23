@@ -1,49 +1,39 @@
 import java.io.IOException;
 import java.net.URI;
 
-class Handler implements URLHandler 
-{
+class Handler implements URLHandler {
     int num = 0;
     String result="";
 
-    public String handleRequest(URI url) 
-    {
-        if (url.getPath().equals("/"))
-        {
-            if(num==0)
-            {
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")){
+            if(num==0){
                 num++;
                 return String.format("Nothing is in the list!");
             }
-            else
-            {
+            else{
                 return result;
             }
         }
         else if (url.getPath().contains("/add-messages")) {
                 String[] parameters = url.getQuery().split("=");
-                if (parameters[0].equals("s")) 
-                {
+                if (parameters[0].equals("s")){
                     result += "\n" + num +". " + parameters[1]; 
                     num++;
                     return result;
-                }
-                
-            }
-            return "404 Not Found!";
+                }  
         }
+        return "404 Not Found!";
     }
+}
 
 class StringServer {
-    public static void main(String[] args) throws IOException 
-    {
+    public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
             return;
         }
-
         int port = Integer.parseInt(args[0]);
-
         Server.start(port, new Handler());
     }
 }
