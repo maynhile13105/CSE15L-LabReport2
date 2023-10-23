@@ -1,13 +1,13 @@
 import java.io.IOException;
 import java.net.URI;
 
-class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+class Handler implements URLHandler 
+{
     int num = 0;
     String result="";
 
-    public String handleRequest(URI url) {
+    public String handleRequest(URI url) 
+    {
         if (url.getPath().equals("/"))
         {
             if(num==0)
@@ -35,7 +35,8 @@ class Handler implements URLHandler {
     }
 
 class StringServer {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException 
+    {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
             return;
