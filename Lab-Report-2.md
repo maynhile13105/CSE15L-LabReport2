@@ -20,6 +20,7 @@
 There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was changed to 1 and the message "1. Hello+bob" was added to the 'result'. 
 
 - **Screenshot for using `/add-messages?s=HowYouLikeThat`**
+  
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/b8a55ee4-e645-4f27-a9e3-ee02c1e35b3f)
 
 - Method `handleRequest()` received the URL as its argument,
@@ -32,14 +33,16 @@ There were those changes because the URL I passed qualified the specific request
 There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was increased to 2 and the message "2. HowYouLikeThat" was added to the 'result'.
 
 ## ***Part 2***
-- The screenshot for using the command `ls` the path to the private key for my SSH key for logging into ieng6 on my computer
+- **The screenshot for using the command `ls` the path to the private key for my SSH key for logging into ieng6 on my computer**
 
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/fe8041b7-9d95-4e83-ac62-bc8c0ab7c71b)
 
-- The screenshot for using the command `ls`  public key for your SSH key for logging into ieng6 within my account on ieng6
+- **The screenshot for using the command `ls`  public key for your SSH key for logging into ieng6 within my account on ieng6**
+  
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/7ff80cb9-f128-4a07-a818-b30b4fcea311)
 
-- The screenshot shows that I logged into ieng6 with my course-specific account without being asked for a password.
+- **The screenshot shows that I logged into ieng6 with my course-specific account without being asked for a password**
+  
 ![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/abffeaa3-47d7-4691-8b66-db7e266033fd)
 
 ## ***Part 3***
