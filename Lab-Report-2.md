@@ -16,7 +16,7 @@
 - Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
 - Method `contains()` received "/add-messages" as its argument.
 - Other fields of the class are `num` and `result`.
-- `num` was increased by 1, from 0 to 1, and then `result` was changed from "" to `1. Hello+bob 
+- `num` was increased by 1, from 0 to 1, and then `result` was changed from "" to `1. Hello+bob` 
 There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was changed to 1 and the message "1. Hello+bob" was added to the 'result'. 
 
 - **Screenshot for using `/add-messages?s=HowYouLikeThat`**
@@ -29,7 +29,7 @@ There were those changes because the URL I passed qualified the specific request
 - Method `equals()` was used twice: Once, it received "/" as an argument. Once, it received "s" as an argument
 - Method `contains()` received "/add-messages" as its argument.
 - Other fields of the class are `num` and `result`.
--  `num` was increased by 1, from 1 to 2. and then `result` was changed from `1. Hello+bob` to `1. Hello+bob \n 2. HowYouLikeThat".  
+-  `num` was increased by 1, from 1 to 2. and then `result` was changed from `1. Hello+bob` to `1. Hello+bob \n 2. HowYouLikeThat"`. 
 There were those changes because the URL I passed qualified the specific requests that match the "/add-messages" and have "s" as the first query parameter. It means that a message had been found. So 'num' was increased to 2 and the message "2. HowYouLikeThat" was added to the 'result'.
 
 ## ***Part 2***
