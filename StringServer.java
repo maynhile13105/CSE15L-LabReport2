@@ -2,18 +2,12 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    int num = 0;
+    int num = 1;
     String result="";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")){
-            if(num==0){
-                num++;
-                return String.format("Nothing is in the list!");
-            }
-            else{
                 return result;
-            }
         }
         else if (url.getPath().contains("/add-messages")) {
                 String[] parameters = url.getQuery().split("=");
