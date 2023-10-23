@@ -3,7 +3,7 @@
 ## ***Part 1***
 - [**Code**](https://maynhile13105.github.io/CSE15L-LabReport2/StringServer.java)
 
-![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/872ddcca-f444-45df-869d-40a6d0ec4b15)
+![image](https://github.com/maynhile13105/CSE15L-LabReport2/assets/146885739/1f722b19-8907-439e-9bd2-56bc7c1f4395)
 
 -- Methods: handleRequest(), getPath(), getQuery(), equals(), contains(), splits()
 -- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
